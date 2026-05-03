@@ -1,6 +1,6 @@
 # Wallpapers
 
-Expreso mi personalidad a travez de mis fondos de pantalla.
+Expreso mi personalidad a través de mis fondos de pantalla.
 
 # Vista previa
 
