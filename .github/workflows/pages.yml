@@ -1,0 +1,61 @@
+name: Deploy wallpaper gallery
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "wallpapers/**"
+      - "index.html"
+      - "styles.css"
+      - "scripts/generate-gallery.mjs"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Prepare static site
+        run: |
+          mkdir -p dist
+          cp index.html dist/
+          cp styles.css dist/
+          cp -r wallpapers dist/
+
+      - name: Generate gallery data
+        run: node scripts/generate-gallery.mjs
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

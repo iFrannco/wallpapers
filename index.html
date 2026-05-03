@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wallpapers</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main>
+    <header class="site-header">
+      <p class="eyebrow">Wallpaper collection</p>
+      <h1>Wallpapers</h1>
+      <p class="description">
+				Galería
+      </p>
+
+      <nav>
+        <a href="https://github.com/ifrannco/wallpapers">Ver repositorio</a>
+      </nav>
+    </header>
+
+    <section id="gallery" class="gallery" aria-label="Galería de wallpapers"></section>
+  </main>
+
+  <script>
+    async function loadGallery() {
+      const response = await fetch("./wallpapers.json");
+
+      if (!response.ok) {
+        throw new Error("No se pudo cargar wallpapers.json");
+      }
+
+      const wallpapers = await response.json();
+      const gallery = document.querySelector("#gallery");
+
+      wallpapers.forEach((wallpaper) => {
+        const article = document.createElement("article");
+        article.className = "wallpaper";
+
+        article.innerHTML = `
+          <a href="${wallpaper.path}" target="_blank" rel="noopener noreferrer">
+            <img
+              src="${wallpaper.path}"
+              alt="${wallpaper.title}"
+              loading="lazy"
+            />
+          </a>
+
+          <div class="wallpaper-info">
+            <h2>${wallpaper.title}</h2>
+            <a href="${wallpaper.path}" download>Descargar</a>
+          </div>
+        `;
+
+        gallery.appendChild(article);
+      });
+    }
+
+    loadGallery().catch((error) => {
+      const gallery = document.querySelector("#gallery");
+      gallery.innerHTML = `<p>No se pudo cargar la galería.</p>`;
+      console.error(error);
+    });
+  </script>
+</body>
+</html>
