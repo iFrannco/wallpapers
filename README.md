@@ -5,14 +5,14 @@ Expreso mi personalidad a travez de mis fondos de pantalla.
 # Vista previa
 
 <p>
-  <a href="https://TU_USUARIO.github.io/NOMBRE_DEL_REPO/">
-    <img src="./wallpapers/nature/forest-01.jpg" width="220" alt="Forest">
+  <a href="https://ifrannco.github.io/wallpapers/">
+    <img src="./wallpapers/wallheaven-3qwx1v_1920x1080.png" width="220">
   </a>
-  <a href="https://TU_USUARIO.github.io/NOMBRE_DEL_REPO/">
-    <img src="./wallpapers/abstract/gradient-01.png" width="220" alt="Gradient">
+  <a href="https://ifrannco.github.io/wallpapers/">
+    <img src="./wallpapers/wallheaven-rqo9gq_1920x1080.png" width="220">
   </a>
-  <a href="https://TU_USUARIO.github.io/NOMBRE_DEL_REPO/">
-    <img src="./wallpapers/minimal/dark-01.webp" width="220" alt="Dark minimal">
+  <a href="https://ifrannco.github.io/wallpapers/">
+    <img src="./wallpapers/wallheaven-m35z1k_1920x1080.jpg" width="220">
   </a>
 </p>
 
