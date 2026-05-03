@@ -14,6 +14,10 @@ Expreso mi personalidad a travez de mis fondos de pantalla.
   <a href="https://ifrannco.github.io/wallpapers/">
     <img src="./wallpapers/wallhaven-m35z1k_1920x1080.jpg" width="220">
   </a>
+  <a href="https://ifrannco.github.io/wallpapers/">
+    <img src="./wallpapers/lofi_girl2.jpg" width="220">
+  </a>
+
 </p>
 
 # Galería
