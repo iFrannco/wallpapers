@@ -6,16 +6,16 @@ Expreso mi personalidad a través de mis fondos de pantalla.
 
 <p>
   <a href="https://ifrannco.github.io/wallpapers/">
-    <img src="./wallpapers/wallhaven-3qwx1v_1920x1080.png" width="220">
+    <img src="./wallpapers/retrato-femenino-con-sombra-roja.png" width="220">
   </a>
   <a href="https://ifrannco.github.io/wallpapers/">
-    <img src="./wallpapers/wallhaven-rqo9gq_1920x1080.png" width="220">
+    <img src="./wallpapers/minecraft-diorama-de-abejas-y-girasoles.png" width="220">
   </a>
   <a href="https://ifrannco.github.io/wallpapers/">
-    <img src="./wallpapers/wallhaven-m35z1k_1920x1080.jpg" width="220">
+    <img src="./wallpapers/la-creacion-de-adan-sobre-codigo.jpg" width="220">
   </a>
   <a href="https://ifrannco.github.io/wallpapers/">
-    <img src="./wallpapers/lofi_girl2.jpg" width="220">
+    <img src="./wallpapers/lofi-girl-estudiando-junto-a-ventana.jpg" width="220">
   </a>
 
 </p>
